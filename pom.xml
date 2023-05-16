@@ -61,6 +61,16 @@
             <artifactId>jaxws-rt</artifactId>
             <version>2.3.3</version>
         </dependency>
+        <!-- OpenAPI dependencies -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.10</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.ws</groupId>
             <artifactId>spring-ws-core</artifactId>
@@ -100,9 +110,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
-        </build>
-
-        </project>
-
+    </build>
+</project>

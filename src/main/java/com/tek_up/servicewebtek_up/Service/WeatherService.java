@@ -21,7 +21,7 @@ public class WeatherService {
 
     public WeatherInfo getWeatherInfo(String location) {
         String apiKey = "6e2dba07979ec3f4d9cba0fdb5612a6d";
-        String url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + ",uk&APPID=" + apiKey;
+        String url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + ",us&APPID=" + apiKey;
 
         return restTemplate.getForObject(url, WeatherInfo.class);
     }
